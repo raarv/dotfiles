@@ -20,6 +20,7 @@ Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-line'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-latex/vim-latex'
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 :set encoding=utf-8
@@ -42,21 +43,34 @@ filetype indent on
 let g:tex_flavor='latex'
 
 
-:map \ld :execute '!xdvi -editor "vim --servername 'v:servername' --remote +\%l \%f" -sourceposition ' . line(".") . expand("%") . " '" . expand(Tex_GetMainFileName(':r')) . ".dvi' >/dev/null&"<CR>
 
 "Enable folding with the spacebar
 nnoremap <space> za
 
 "split navigations
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 
 color torte
 
 if has('gui_running')
    set guifont=Consolas:h12:cANSI:qDRAFT
 endif
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
+
+
+set nobackup
+set nowritebackup
+set noswapfile
 
 
