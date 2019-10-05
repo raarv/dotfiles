@@ -6,7 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-call plug#begin('/home/ra/.vim/plugins')
+call plug#begin('/home/raarv/.vim/plugins')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -21,6 +21,8 @@ Plug 'kana/vim-textobj-line'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-latex/vim-latex'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 call plug#end()
 
 :set encoding=utf-8
@@ -73,4 +75,5 @@ set nobackup
 set nowritebackup
 set noswapfile
 
-
+"enable python 3 syntax checking on python-mode
+let g:pymode_python = 'python3'
