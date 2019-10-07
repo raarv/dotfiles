@@ -13,7 +13,7 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-alias vim='gvim -v'
+#alias vim='gvim -v'
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
