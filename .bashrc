@@ -128,5 +128,3 @@ alias ta="t a -t"
 alias tls="t ls"
 alias tn="t new -t"
 
-export PROMPT_COMMAND="history -a; history -n"
-source ~/scripts/sync-history.sh
