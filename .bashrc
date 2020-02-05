@@ -123,7 +123,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 
-alias t="tmux"
+alias t="tmux -2"
 alias ta="t a -t"
 alias tls="t ls"
 alias tn="t new -t"
