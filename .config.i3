@@ -150,7 +150,7 @@ bindsym $mod+r mode "resize"
 hide_edge_borders none 
 
 # wallpaper with feh
-exec --no-startup-id feh --bg-scale ~/Downloads/H759Upr.jpg
+exec --no-startup-id feh --bg-scale ~/Downloads/side-view-of-woman-in-illuminated-city-at-night-315191.jpg
 
 
 # class                 border  bground text    indicator child_border
