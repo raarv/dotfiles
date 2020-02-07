@@ -1,0 +1,2 @@
+# select sink and source
+bindsym $mod+i exec --no-startup-id ~/.config/i3/select_pactl_sink_source.sh

@@ -1,0 +1,8 @@
+# show the sinks 
+pactl list sinks
+# list inputs 
+pactl list sink-inputs | grep 'Input'
+# set new default sink
+pacmd set-default-sink <sink> 
+# move inputs to sink
+pacmd move-sink-input <input> <sink>
