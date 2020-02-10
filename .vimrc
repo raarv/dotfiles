@@ -1,4 +1,3 @@
-
 " Install vim-plug and plugins if vim-plug is not already installed
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
