@@ -73,8 +73,19 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
+# Vim-like keybindings
 bindkey -v
+
+# Pyenv
+export PATH="/home/raarv/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# Tmux aliases
+alias t="tmux -2"
+alias ta="t a -t"
+alias tls="t ls"
+alias tn="t new -t"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
